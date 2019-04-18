@@ -1,0 +1,77 @@
+.header{
+    height: 100px;
+    background: $hc4;
+    line-height: 24px;
+    .logo{
+        position: absolute;
+        top: (100px - 56px) / 2;
+        left: (95 / 1920) * 100%;
+        width: 144px;
+    }
+    .nav{
+        li{
+            position: relative;
+            padding: (100px - 24px) / 2 0;
+            margin: 0 (25 / 1920) * 100%;
+            > a{
+                display: block;
+                padding: 0 20px;
+                height: 24px;
+                color: $fc1;
+                overflow: hidden;
+                &.act{
+                    .e{
+                        margin-top: -24px;
+                    }
+                }
+            }
+            &:before{
+                @include ba;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 4px;
+                background: $fc3;
+                @include mt3;
+            }
+            &:hover{
+                &:before{
+                    width: 100%;
+                }
+                .e{
+                    margin-top: -24px;
+                }
+                .pull-nav{
+                    transform: none;
+                    @include show;
+                }
+            }
+        }
+        .e{
+            @include mt3;
+        }
+    }
+}
+
+.pull-nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 12px 20px;
+    width: 180px;
+    background: $white;
+    text-align: left;
+    transform: translateY(20px);
+    @include hide;
+    @include mt3;
+    > a{
+        display: block;
+        padding: (40px - 24px) / 2 0;
+        color: $fc3;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $fc1;
+            }
+        }
+    }
+}
