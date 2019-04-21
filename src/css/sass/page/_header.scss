@@ -2,6 +2,7 @@
     height: 100px;
     background: $hc4;
     line-height: 24px;
+    @include mt3;
     .logo{
         position: absolute;
         top: (100px - 56px) / 2;
@@ -13,6 +14,7 @@
             position: relative;
             padding: (100px - 24px) / 2 0;
             margin: 0 (25 / 1920) * 100%;
+            @include mt3;
             > a{
                 display: block;
                 padding: 0 20px;
@@ -51,6 +53,20 @@
             @include mt3;
         }
     }
+    &.sheader{
+        height: 80px;
+        box-shadow: 0 0 5px $black-5;
+        .logo{
+            top: (80px - 56px) / 2;
+        }
+        .nav li{
+            padding: (80px - 24px) / 2 0;
+        }
+    }
+}
+
+.btn-menu.s-btn-menu{
+    top: (80px - 60px) / 2;
 }
 
 .pull-nav{
@@ -74,4 +90,94 @@
             }
         }
     }
+}
+
+.menuBox{
+    background: #fff;
+    padding-right: (75 / 1920) * 100%;
+    transform: translateY(-100%);
+    @include hide;
+    @include mt6;
+    &.show{
+        transform: none;
+        @include show;
+    }
+    .menuCont{
+        padding-top: 15%;
+        margin-right: 25px + 60px;
+        height: 100%;
+        background: $hc5;
+        @include sy;
+    }
+    .logo{
+        top: 25px;
+    }
+    .m-cop, .logo{
+        position: fixed;
+        z-index: 99;
+        left: (95 / 1920) * 100%;
+    }
+    .m-cop{
+        bottom: 30px;
+        margin-left: 15px;
+        img{
+            vertical-align: bottom;
+            max-width: 100%;
+        }
+    }
+    .share{
+        position: fixed;
+        z-index: 99;
+        bottom: 30px;
+        right: (75 / 1920) * 100%;
+        margin-right: 60px + 25px + 30px;
+    }
+    .navMobile{
+        .mtv{
+            display: none;
+        }
+        a{
+            display: block;
+            line-height: 36px;
+            color: $white;
+        }
+        dd{
+            padding: 0 40%;
+            + dd{
+                margin-top: 57px - 12px;
+            }
+        }
+        dd > a{
+            height: 36px;
+            text-align: center;
+            font-size: 30px;
+            overflow: hidden;
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    transform: translateX(20px);
+                    .e{
+                        margin-top: -36px;
+                    }
+                }
+            }
+        }
+        .e{
+            text-transform: capitalize;
+        }
+        .c{
+            &:before{
+                content: "";
+                display: inline-block;
+                vertical-align: top;
+                margin: 17px 25px 0 0;
+                width: 25px;
+                height: 1px;
+                background: $white;
+            }
+        }
+    }
+}
+
+.mtop{
+    height: 100px;
 }

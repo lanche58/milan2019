@@ -163,10 +163,11 @@
   position: fixed;
   top: 20px;
   right: 3.90625%;
-  z-index: 1010;
+  z-index: 1012;
   width: 60px;
   height: 60px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: 300ms; }
   .btn-menu span {
     position: absolute;
     right: 20px;
@@ -235,11 +236,64 @@
         color: #333; } }
   .share .icon-weibo {
     font-size: 19px; }
+  .share.mshare {
+    width: 24px;
+    text-align: center; }
+    .share.mshare p {
+      margin: 0 0 25px; }
+      .share.mshare p > img {
+        vertical-align: bottom;
+        max-width: 100%; }
+    .share.mshare a {
+      display: block;
+      color: #fff;
+      color: rgba(255, 255, 255, 0.5); }
+      .share.mshare a + a {
+        margin: 2px 0 0; }
+      @media screen and (min-width: 1025px) {
+        .share.mshare a:hover {
+          color: #fff; } }
+
+.ix-ti {
+  color: #333; }
+  .ix-ti .en {
+    font-size: 50px;
+    margin-bottom: 12px;
+    text-transform: capitalize; }
+  .ix-ti .ch {
+    font-size: 16px;
+    line-height: 1.6; }
+
+.btn-big {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  margin-top: -21px;
+  font-size: 42px;
+  line-height: 1;
+  text-align: center;
+  color: #000;
+  color: rgba(0, 0, 0, 0.5);
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 300ms; }
+
+@media screen and (min-width: 1025px) {
+  .btn-big-hover:hover .btn-big {
+    transform: none;
+    opacity: 1;
+    visibility: visible; } }
+
+.btn {
+  transition: 300ms; }
 
 .header {
   height: 100px;
   background: #f9f9f9;
-  line-height: 24px; }
+  line-height: 24px;
+  transition: 300ms; }
   .header .logo {
     position: absolute;
     top: 22px;
@@ -248,7 +302,8 @@
   .header .nav li {
     position: relative;
     padding: 38px 0;
-    margin: 0 1.30208%; }
+    margin: 0 1.30208%;
+    transition: 300ms; }
     .header .nav li > a {
       display: block;
       padding: 0 20px;
@@ -276,6 +331,16 @@
       visibility: visible; }
   .header .nav .e {
     transition: 300ms; }
+  .header.sheader {
+    height: 80px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+    .header.sheader .logo {
+      top: 12px; }
+    .header.sheader .nav li {
+      padding: 28px 0; }
+
+.btn-menu.s-btn-menu {
+  top: 10px; }
 
 .pull-nav {
   position: absolute;
@@ -296,3 +361,377 @@
     @media screen and (min-width: 1025px) {
       .pull-nav > a:hover {
         color: #333; } }
+
+.menuBox {
+  background: #fff;
+  padding-right: 3.90625%;
+  transform: translateY(-100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: 600ms; }
+  .menuBox.show {
+    transform: none;
+    opacity: 1;
+    visibility: visible; }
+  .menuBox .menuCont {
+    padding-top: 15%;
+    margin-right: 85px;
+    height: 100%;
+    background: #1a1a1a;
+    overflow: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch; }
+  .menuBox .logo {
+    top: 25px; }
+  .menuBox .m-cop, .menuBox .logo {
+    position: fixed;
+    z-index: 99;
+    left: 4.94792%; }
+  .menuBox .m-cop {
+    bottom: 30px;
+    margin-left: 15px; }
+    .menuBox .m-cop img {
+      vertical-align: bottom;
+      max-width: 100%; }
+  .menuBox .share {
+    position: fixed;
+    z-index: 99;
+    bottom: 30px;
+    right: 3.90625%;
+    margin-right: 115px; }
+  .menuBox .navMobile .mtv {
+    display: none; }
+  .menuBox .navMobile a {
+    display: block;
+    line-height: 36px;
+    color: #fff; }
+  .menuBox .navMobile dd {
+    padding: 0 40%; }
+    .menuBox .navMobile dd + dd {
+      margin-top: 45px; }
+  .menuBox .navMobile dd > a {
+    height: 36px;
+    text-align: center;
+    font-size: 30px;
+    overflow: hidden; }
+    @media screen and (min-width: 1025px) {
+      .menuBox .navMobile dd > a:hover {
+        transform: translateX(20px); }
+        .menuBox .navMobile dd > a:hover .e {
+          margin-top: -36px; } }
+  .menuBox .navMobile .e {
+    text-transform: capitalize; }
+  .menuBox .navMobile .c:before {
+    content: "";
+    display: inline-block;
+    vertical-align: top;
+    margin: 17px 25px 0 0;
+    width: 25px;
+    height: 1px;
+    background: #fff; }
+
+.mtop {
+  height: 100px; }
+
+.footer {
+  padding: 40px 0 50px; }
+  .footer .f-cop {
+    float: left;
+    padding-top: 15px;
+    text-transform: uppercase; }
+    .footer .f-cop a {
+      display: block;
+      margin-top: 5px; }
+  .footer .f-ma {
+    float: right; }
+    .footer .f-ma > img {
+      float: right;
+      width: 98px;
+      margin-left: 10px; }
+    .footer .f-ma .b {
+      float: left;
+      padding-top: 30px; }
+    .footer .f-ma .ch {
+      font-size: 18px;
+      font-weight: bold; }
+    .footer .f-ma .en {
+      text-transform: uppercase;
+      font-size: 12px; }
+  @media screen and (min-width: 1025px) {
+    .footer a:hover {
+      color: #333; } }
+
+.banner-box {
+  background: #e5e5e5;
+  padding-left: 12.23958%;
+  overflow: visible; }
+  .banner-box .share {
+    position: absolute;
+    z-index: 199;
+    bottom: 10px;
+    right: 4.94792%; }
+
+.imgTx {
+  vertical-align: bottom;
+  max-width: 100%; }
+
+.banner-down {
+  position: absolute;
+  z-index: 199;
+  left: 8.59375%;
+  bottom: 175px; }
+  .banner-down .btn {
+    position: absolute;
+    top: 100%;
+    right: 2px;
+    margin-top: 30px; }
+
+.banner {
+  background: #f9f9f9; }
+  .banner .picbox {
+    margin-right: 22.55193%; }
+  .banner .pai {
+    padding-bottom: 60%; }
+  .banner .txts {
+    position: absolute;
+    top: 15.38462%;
+    right: 5.63798%;
+    min-width: 590px;
+    color: #333; }
+  .banner .en {
+    font-size: 60px;
+    margin-bottom: 12px; }
+  .banner .ch {
+    font-size: 16px;
+    line-height: 1.6; }
+  .banner .slick-dots {
+    left: auto;
+    right: 5.63798%;
+    bottom: 50%;
+    transform: translateY(50%);
+    bottom: 20%\9;
+    transform: none\9; }
+    .banner .slick-dots li {
+      display: block;
+      position: relative;
+      width: 8px;
+      height: 8px;
+      background: #333;
+      margin: 0;
+      cursor: pointer; }
+      .banner .slick-dots li + li {
+        margin-top: 30px; }
+      .banner .slick-dots li:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        border: 1px solid #333;
+        border-radius: 50%;
+        opacity: 0;
+        visibility: hidden;
+        transition: 400ms; }
+      @media screen and (min-width: 1025px) {
+        .banner .slick-dots li:not(.slick-active):hover:before {
+          top: -6px;
+          bottom: -6px;
+          left: -6px;
+          right: -6px;
+          opacity: 1;
+          visibility: visible; } }
+    .banner .slick-dots .slick-active:before {
+      top: -6px;
+      bottom: -6px;
+      left: -6px;
+      right: -6px;
+      opacity: 1;
+      visibility: visible; }
+
+.ix1 {
+  position: relative;
+  padding-top: 3.64583%;
+  margin-top: 110px;
+  overflow: hidden; }
+  .ix1 .ix-video {
+    float: right;
+    margin-right: 4.94792%; }
+  .ix1:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 21.12676%;
+    background: #e5e5e5;
+    width: 39.58333%; }
+  .ix1 .ia-tx {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -600px;
+    width: 480px;
+    padding-top: 7.29167%; }
+
+.ix-video {
+  position: relative;
+  width: 45.3125%; }
+  .ix-video .pai {
+    padding-bottom: 74.13793%; }
+
+#ivideo {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0; }
+
+.page-bg {
+  background: #f9f9f9; }
+
+.ia-tx .tx {
+  max-height: 72px;
+  margin-top: 40px; }
+
+.ia-tx .more {
+  margin-top: 105px; }
+
+.ix2 {
+  margin-top: 110px;
+  position: relative; }
+  .ix2:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    background: #f9f9f9; }
+  .ix2 .ia-tx {
+    position: relative;
+    z-index: 99;
+    width: 50%;
+    float: left;
+    padding: 40px 0 0 9.16667%; }
+
+.ipimg-list {
+  width: 50%;
+  float: left;
+  overflow: visible; }
+  .ipimg-list .ip-img {
+    vertical-align: bottom;
+    width: 100%;
+    transition: 300ms; }
+  .ipimg-list .item {
+    border-right: 10px solid #f9f9f9;
+    cursor: pointer; }
+  .ipimg-list .slick-list {
+    overflow: visible; }
+  @media screen and (min-width: 1025px) {
+    .ipimg-list .slick-current:hover .ip-img {
+      transform: scale(1.1); }
+    .ipimg-list .slick-current:hover .btn-big {
+      transform: none;
+      opacity: 1;
+      visibility: visible; } }
+
+.ip-arrow .slick-arrow {
+  top: auto;
+  left: auto;
+  right: 10px;
+  bottom: 0;
+  margin: 0;
+  width: 96px;
+  height: 62px;
+  background: #fff;
+  text-align: center;
+  line-height: 62px; }
+  .ip-arrow .slick-arrow .btn {
+    vertical-align: middle;
+    top: -1px; }
+  @media screen and (min-width: 1025px) {
+    .ip-arrow .slick-arrow:hover .btn {
+      width: 50px; } }
+
+.ip-arrow .slick-prev {
+  margin-right: 96px; }
+
+.pw2 {
+  width: 1360px;
+  margin: 0 auto; }
+
+.ix3 {
+  padding: 110px 0; }
+  .ix3 .ix-ti {
+    margin-bottom: 80px; }
+
+.inews-list {
+  margin-left: -85px; }
+  .inews-list li {
+    width: 25%;
+    float: left; }
+  .inews-list .inews-item {
+    margin-left: 85px; }
+
+.inews-item {
+  display: block; }
+  .inews-item .nowti {
+    font-size: 16px;
+    color: #333;
+    font-weight: bold; }
+  .inews-item .tx {
+    height: 72px;
+    margin-top: 30px; }
+  .inews-item .date {
+    margin-bottom: 4px;
+    color: #999; }
+  .inews-item .more {
+    margin-top: 60px;
+    transform: translateX(15%);
+    opacity: 0;
+    visibility: hidden;
+    transition: 300ms; }
+  @media screen and (min-width: 1025px) {
+    .inews-item:hover .more {
+      transform: none;
+      opacity: 1;
+      visibility: visible; } }
+
+.ilink-list li {
+  width: 50%;
+  float: left; }
+
+.ilink-item {
+  position: relative;
+  display: block;
+  color: #fff; }
+  .ilink-item .pai {
+    padding-bottom: 44.79167%; }
+    .ilink-item .pai:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: #4d4d4d;
+      transition: 400ms; }
+  .ilink-item .txts {
+    position: absolute;
+    top: 18.60465%;
+    left: 20.83333%;
+    right: 40px; }
+  .ilink-item .ix-ti {
+    color: #fff; }
+  .ilink-item .btn-learn-more {
+    border-color: #fff;
+    color: #fff; }
+  .ilink-item .tx {
+    height: 48px;
+    width: 520px;
+    max-width: 100%;
+    margin-top: 40px; }
+  .ilink-item .more {
+    margin-top: 50px; }
+  .ilink-item.act .pai:after {
+    background: rgba(0, 0, 0, 0.6); }

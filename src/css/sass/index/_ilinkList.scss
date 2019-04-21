@@ -1,0 +1,48 @@
+.ilink-list{
+    li{
+        width: 50%;
+        float: left;
+    }
+}
+
+.ilink-item{
+    position: relative;
+    display: block;
+    color: $white;
+    .pai{
+        padding-bottom: (430 / 960) * 100%;
+        &:after{
+            @include ba;
+            @include tblr;
+            background: $hc6;
+            @include mt4;
+        }
+    }
+    .txts{
+        position: absolute;
+        top: (80 / 430) * 100%;
+        left: (200 / 960) * 100%;
+        right: 40px;
+    }
+    .ix-ti{
+        color: $white;
+    }
+    .btn-learn-more {
+        border-color: $white;
+        color: $white;
+    }
+    .tx{
+        height: 24px * 2;
+        width: 520px;
+        max-width: 100%;
+        margin-top: 40px;
+    }
+    .more{
+        margin-top: 50px;
+    }
+    &.act{
+        .pai:after{
+            background: $black-6;
+        }
+    }
+}

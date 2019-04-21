@@ -198,10 +198,11 @@
     position: fixed;
     top: (100px - 60px) / 2;
     right: (75 / 1920) * 100%;
-    z-index: 1010;
+    z-index: 1012;
     width: 60px;
     height: 60px;
     cursor: pointer;
+    @include mt3;
     span{
         position: absolute;
         right: (60px - 20px) / 2;
@@ -288,4 +289,70 @@
     .icon-weibo{
         font-size: 19px;
     }
+    &.mshare{
+        width: 24px;
+        text-align: center;
+        p{
+            margin: 0 0 25px;
+            > img{
+                vertical-align: bottom;
+                max-width: 100%;
+            }
+        }
+        a{
+            display: block;
+            color: $white;
+            color: $white-5;
+            + a{
+                margin: 2px 0 0;
+            }
+            @media screen and (min-width:1025px) {
+                &:hover{
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+
+.ix-ti{
+    color: $fc1;
+    .en{
+        font-size: 50px;
+        margin-bottom: 12px;
+        text-transform: capitalize;
+    }
+    .ch{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+}
+
+.btn-big{
+    @include plr;
+    top: 50%;
+    margin-top: -(42px / 2);
+    font-size: 42px;
+    line-height: 1;
+    text-align: center;
+    color: $black;
+    color: $black-5;
+    transform: translateY(-100%);
+    @include hide;
+    @include mt3;
+}
+
+.btn-big-hover{
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .btn-big{
+                transform: none;
+                @include show;
+            }
+        }
+    }
+}
+
+.btn{
+    @include mt3;
 }

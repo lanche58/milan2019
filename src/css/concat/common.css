@@ -77,20 +77,22 @@ a {
 	left: 0;
 	right: 0;
 	background: #fff;
-	/* box-shadow: 0 0 5px rgba(0, 0, 0, .5); */
+	
 }
 .menuBox {
 	position: fixed;
-	z-index: 1009;
+	z-index: 1011;
 	top: 0;
 	right: 0;
-	width: 100%;
-	height: 100%;
-	background: #fff;
-	overflow: hidden;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
-	display: none;
+	left: 0;
+	bottom: 0;
+	/* width: 100%; */
+	/* height: 100%; */
+	/* background: #fff; */
+	/* overflow: hidden; */
+	/* overflow-y: auto; */
+	/* -webkit-overflow-scrolling: touch; */
+	/* display: none; */
 }
 .menuBlack {
 	position: fixed;
@@ -143,7 +145,7 @@ a {
 .pic2 > img { display: block; width: 100%; }
 /* .aico{ display: inline-block; background: url(../images/aicos.png); } */
 /* .bico{ display: inline-block; background: url(../images/bicos.png); } */
-.logo { display: block; transition: none; }
+.logo { display: block; }
 .logo > img { display: block; width: 100%; }
 .now{ white-space: nowrap; }
 .nowti { white-space: nowrap; text-overflow: ellipsis; overflow: hidden; line-height: 1.4; }
@@ -244,8 +246,8 @@ a {
 /* winxin */
 .popUpblack { position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1020; background: url(../images/black5.png); display: none; }
 .popUpblack.show .popUp { transform: none; opacity: 1; visibility: visible; transition: 600ms; }
-.popUp { position: absolute; left: 50%; top: 50%; margin: -126px 0 0 -115px; width: 220px; height: 242px; border: 5px solid #0079c3; background: #fff; opacity: 0; visibility: hidden; transform: translateY(20%); }
-.popUp .t { padding: 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; background: #0079c3; overflow: hidden; }
+.popUp { position: absolute; left: 50%; top: 50%; margin: -126px 0 0 -115px; width: 220px; height: 242px; border: 5px solid #000; background: #fff; opacity: 0; visibility: hidden; transform: translateY(20%); }
+.popUp .t { padding: 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; background: #000; overflow: hidden; }
 .popUp .t .close { float: right; cursor: pointer; color: #fff; font-weight: normal; }
 .popUp .img { padding: 20px; }
 .popUp .img img { width: 100%; display: block; }
@@ -309,6 +311,7 @@ a {
 .cg-w .item.prevSlick { z-index: 4 !important; }
 .cg-w .item { opacity: 1 !important; z-index: 2 !important; }
 .cg-w .item.prevSlick .pic2 { animation: increaseHeight 1.5s forwards; -webkit-animation: increaseHeight 1.5s forwards; }
+.cg-s .slick-current .pai img,
 .cg-s .slick-current .pic2 img { animation: scaleUpDown 5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .igm { position: relative; top: -5%; left: -5%; width: 110% !important; }
 .cg-m .active .igm { animation: imgMove 6s linear; }
@@ -638,3 +641,9 @@ a.pswp__share--download:hover { background: #DDD; }
 .pswp__element--disabled { display: none !important; }
 .pswp--minimal--dark .pswp__top-bar { background: none; }
 /* Look at the big picture end */
+
+@keyframes fadeIn{
+	0%{opacity:0}
+	100%{opacity:1}
+}
+.active .fadeIn i{animation:fadeIn 1s both;}

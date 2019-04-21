@@ -1,0 +1,145 @@
+.ix1{
+    position: relative;
+    padding-top: (70 / 1920) * 100%;
+    margin-top: 110px;
+    overflow: hidden;
+    .ix-video{
+        float: right;
+        margin-right: (95 / 1920) * 100%;
+    }
+    &:before{
+        @include ba;
+        top: 0;
+        right: 0;
+        bottom: (150 / (640 + 70)) * 100%;
+        background: $hc2;
+        width: (760 / 1920) * 100%;
+    }
+    .ia-tx{
+        position: absolute;
+        top: 0;
+        left: 50%;
+        margin-left: -600px;
+        width: 480px;
+        padding-top: (140 / 1920) * 100%;
+    }
+}
+
+.ix-video{
+    position: relative;
+    width: (870 / 1920) * 100%;
+    .pai{
+        padding-bottom: (645 / 870) * 100%;
+    }
+}
+
+#ivideo{
+    position: absolute;
+    @include tblr;
+}
+
+.page-bg{
+    background: $hc4;
+}
+
+.ia-tx{
+    .tx{
+        max-height: 24px * 3;
+        margin-top: 52px - 12px;
+    }
+    .more{
+        margin-top: 105px;
+    }
+}
+
+.ix2{
+    margin-top: 110px;
+    position: relative;
+    &:after{
+        @include ba;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        width: 50%;
+        background: $hc4;
+    }
+    .ia-tx{
+        position: relative;
+        z-index: 99;
+        width: 50%;
+        float: left;
+        padding: 40px 0 0 (110 / 1200) * 100%;
+    }
+}
+
+.ipimg-list{
+    width: 50%;
+    float: left;
+    overflow: visible;
+    .ip-img{
+        vertical-align: bottom;
+        width: 100%;
+        @include mt3;
+    }
+    .item{
+        border-right: 10px solid $hc4;
+        cursor: pointer;
+    }
+    .slick-list{
+        overflow: visible;
+    }
+    .slick-current{
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .ip-img{
+                    transform: scale(1.1);
+                }
+                .btn-big{
+                    transform: none;
+                    @include show;
+                }
+            }
+        }
+    }
+}
+
+.ip-arrow{
+    .slick-arrow{
+        top: auto;
+        left: auto;
+        right: 10px;
+        bottom: 0;
+        margin: 0;
+        width: 96px;
+        height: 62px;
+        background: $white;
+        text-align: center;
+        line-height: 62px;
+        .btn{
+            vertical-align: middle;
+            top: -1px;
+        }
+        @media screen and (min-width:1025px) {
+            &:hover{
+                .btn{ 
+                    width: 50px;
+                }
+            }
+        }
+    }
+    .slick-prev{
+        margin-right: 96px;
+    }
+}
+
+.pw2{
+    width: 1360px;
+    margin: 0 auto;
+}
+
+.ix3{
+    padding: 110px 0;
+    .ix-ti{
+        margin-bottom: 80px;
+    }
+}

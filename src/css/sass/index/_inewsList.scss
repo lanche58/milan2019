@@ -1,0 +1,41 @@
+.inews-list{
+    margin-left: -85px;
+    li{
+        width: 25%;
+        float: left;
+    }
+    .inews-item{
+        margin-left: 85px;
+    }
+}
+
+.inews-item{
+    display: block;
+    .nowti{
+        font-size: 16px;
+        color: $fc1;
+        font-weight: bold;
+    }
+    .tx{
+        height: 24px * 3;
+        margin-top: 30px;
+    }
+    .date{
+        margin-bottom: 14px - 10px;
+        color: $fc3;
+    }
+    .more{
+        margin-top: 60px;
+        transform: translateX(15%);
+        @include hide;
+        @include mt3;
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .more{
+                transform: none;
+                @include show;
+            }
+        }
+    }
+}

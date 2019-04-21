@@ -1,0 +1,102 @@
+.banner-box{
+    background: $hc2;
+    padding-left: (235 / 1920) * 100%;
+    overflow: visible;
+    .share{
+        position: absolute;
+        z-index: 199;
+        bottom: 10px;
+        right: (95 / 1920) * 100%;
+    }
+}
+
+.imgTx{
+    vertical-align: bottom;
+    max-width: 100%;
+}
+
+.banner-down{
+    position: absolute;
+    z-index: 199;
+    left: (165 / 1920) * 100%;
+    bottom: 175px;
+    .btn{
+        position: absolute;
+        top: 100%;
+        right: 2px;
+        margin-top: 30px;
+    }
+}
+
+.banner{
+    background: $hc4;
+    .picbox{
+        margin-right: (380 / 1685) * 100%;
+    }
+    .pai{
+        padding-bottom: (780 / 1300) * 100%;
+    }
+    .txts{
+        position: absolute;
+        top: (120 / 780) * 100%;
+        right: (95 / 1685) * 100%;
+        min-width: 590px;
+        color: $fc1;
+    }
+    .en{
+        font-size: 60px;
+        margin-bottom: 27px - 15px;
+    }
+    .ch{
+        font-size: 16px;
+        line-height: 1.6;
+    }
+    .slick-dots{
+        left: auto;
+        right: (95 / 1685) * 100%;
+        bottom: 50%;
+        transform: translateY(50%);
+        bottom: 20%\9;
+        transform: none\9;
+        li{
+            display: block;
+            position: relative;
+            width: 8px;
+            height: 8px;
+            background: $fc1;
+            margin: 0;
+            cursor: pointer;
+            + li{
+                margin-top: 30px;
+            }
+            &:before{
+                @include ba;
+                @include tblr;
+                border: 1px solid $fc1;
+                border-radius: 50%;
+                @include hide;
+                @include mt4;
+            }
+            @media screen and (min-width:1025px) {
+                &:not(.slick-active):hover{
+                    &:before{
+                        top: -6px;
+                        bottom: -6px;
+                        left: -6px;
+                        right: -6px;
+                        @include show;
+                    }
+                }
+            }
+        }
+        .slick-active{
+            &:before{
+                top: -6px;
+                bottom: -6px;
+                left: -6px;
+                right: -6px;
+                @include show;
+            }
+        }
+    }
+}
