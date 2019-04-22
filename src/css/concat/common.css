@@ -313,6 +313,7 @@ a {
 .cg-w .item.prevSlick .pic2 { animation: increaseHeight 1.5s forwards; -webkit-animation: increaseHeight 1.5s forwards; }
 .cg-s .slick-current .pai img,
 .cg-s .slick-current .pic2 img { animation: scaleUpDown 5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.active .cg-s2 .pic2 img { animation: scaleUpDown 5s forwards cubic-bezier(0.25, 0.46, 0.45, 0.94); }
 .igm { position: relative; top: -5%; left: -5%; width: 110% !important; }
 .cg-m .active .igm { animation: imgMove 6s linear; }
 /* banner animation end */

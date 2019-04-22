@@ -87,6 +87,14 @@ $(function () {
     
     changeHeader();
 
+    $('.btn-scroll a').bind(_click, function() {
+        var hash = $(this).attr('href').split('#')[1];
+        if (hash) {
+            e.preventDefault();
+            $('html,body').animate({scrollTop: $('#' + hash).offset().top - $mtoph}, 800);
+        }
+    });
+
 
     // 友情链接
     // var isopen = 0;
@@ -152,11 +160,11 @@ $(function () {
 	
 	// pbanner animation
 	$(window).scroll(function() {
-        var windowTop = $(window).scrollTop();
-        if (windowTop < w_height && !isMobile) {
-            $('.pbanner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
-            $('.pro-banner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
-        }
+        // var windowTop = $(window).scrollTop();
+        // if (windowTop < w_height && !isMobile) {
+        //     $('.pbanner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
+        //     $('.pro-banner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
+        // }
         changeHeader();
     });
  

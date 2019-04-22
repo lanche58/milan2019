@@ -1,0 +1,11 @@
+.news-item{
+    display: block;
+    overflow: hidden;
+    .picbox{
+        float: left;
+        width: (420 / 1200) * 100%;
+    }
+    .pai{
+        padding-bottom: (240 / 420) * 100%;
+    }
+}

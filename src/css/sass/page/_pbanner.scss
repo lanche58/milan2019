@@ -1,0 +1,38 @@
+.pbanner-box{
+    position: relative;
+    margin-bottom: (120 / 1920) * 100%;
+    &:before{
+        @include ba;
+        right: 0;
+        top: 0;
+        bottom: -(120 / 553) * 100%;
+        width: (1320 / 1920) * 100%;
+        background: $hc4;
+    }
+    .btn-scroll{
+        position: absolute;
+        z-index: 199;
+        left: (188 / 1920) * 100%;
+        top: 100%;
+        margin-top: -75px;
+    }
+}
+
+.btn-scroll{
+    text-align: center;
+    p{
+        padding-top: 15px;
+    }
+}
+
+.pbanner{
+    .pic2{
+        width: (1538 / 1920) * 100%;
+    }
+    .ix-ti{
+        position: absolute;
+        right: (95 / 1920) * 100%;
+        top: (115 / 553) * 100%;
+        min-width: 555px;
+    }
+}

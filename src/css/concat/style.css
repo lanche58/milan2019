@@ -258,8 +258,7 @@
   color: #333; }
   .ix-ti .en {
     font-size: 50px;
-    margin-bottom: 12px;
-    text-transform: capitalize; }
+    margin-bottom: 12px; }
   .ix-ti .ch {
     font-size: 16px;
     line-height: 1.6; }
@@ -434,7 +433,8 @@
   height: 100px; }
 
 .footer {
-  padding: 40px 0 50px; }
+  padding: 40px 0 50px;
+  background: #f9f9f9; }
   .footer .f-cop {
     float: left;
     padding-top: 15px;
@@ -460,6 +460,38 @@
   @media screen and (min-width: 1025px) {
     .footer a:hover {
       color: #333; } }
+
+.pbanner-box {
+  position: relative;
+  margin-bottom: 6.25%; }
+  .pbanner-box:before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: -21.69982%;
+    width: 68.75%;
+    background: #f9f9f9; }
+  .pbanner-box .btn-scroll {
+    position: absolute;
+    z-index: 199;
+    left: 9.79167%;
+    top: 100%;
+    margin-top: -75px; }
+
+.btn-scroll {
+  text-align: center; }
+  .btn-scroll p {
+    padding-top: 15px; }
+
+.pbanner .pic2 {
+  width: 80.10417%; }
+
+.pbanner .ix-ti {
+  position: absolute;
+  right: 4.94792%;
+  top: 20.79566%;
+  min-width: 555px; }
 
 .banner-box {
   background: #e5e5e5;
@@ -735,3 +767,12 @@
     margin-top: 50px; }
   .ilink-item.act .pai:after {
     background: rgba(0, 0, 0, 0.6); }
+
+.news-item {
+  display: block;
+  overflow: hidden; }
+  .news-item .picbox {
+    float: left;
+    width: 35%; }
+  .news-item .pai {
+    padding-bottom: 57.14286%; }
