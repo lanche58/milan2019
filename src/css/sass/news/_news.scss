@@ -1,0 +1,45 @@
+.nw1{
+    padding: (120 / 1920) * 100% 0 (140 / 1920) * 100%;
+    .news-list{
+        margin-bottom: 90px;
+    }
+}
+
+.nw-ti{
+    position: relative;
+    padding-bottom: 25px - 7px;
+    font-size: 24px;
+    font-weight: bold;
+    color: $fc1;
+    &:before{
+        @include ba;
+        left: 0;
+        bottom: 0;
+        width: 40px;
+        height: 3px;
+        background: $fc1;
+    }
+}
+
+.nw2{
+    padding: (110 / 1920) * 100% 0 100px;
+    .date{
+        margin-top: 52px - 7px;
+        span{
+            margin-left: 30px;
+            color: $fc3;
+        }
+    }
+    .freeTx{
+        margin-top: 55px;
+    }
+    .nw-back{
+        margin-top: 150px;
+    }
+}
+
+.nw-pw{
+    width: 850px;
+    margin-left: 240px;
+    max-width: 100%;
+}

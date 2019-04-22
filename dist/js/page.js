@@ -87,7 +87,7 @@ $(function () {
     
     changeHeader();
 
-    $('.btn-scroll a').bind(_click, function() {
+    $('.btn-scroll a').bind(_click, function(e) {
         var hash = $(this).attr('href').split('#')[1];
         if (hash) {
             e.preventDefault();

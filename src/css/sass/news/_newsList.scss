@@ -4,8 +4,34 @@
     .picbox{
         float: left;
         width: (420 / 1200) * 100%;
+        margin-right: (75 / 1200) * 100%;
     }
     .pai{
         padding-bottom: (240 / 420) * 100%;
+    }
+    .date{
+        margin-bottom: 4px;
+        color: $fc3;
+    }
+    .nowti{
+        font-size: 16px;
+        font-weight: bold;
+        color: $fc1;
+    }
+    .tx{
+        height: 24px * 2;
+        margin-top: 30px;
+    }
+    .more{
+        margin-top: 60px;
+    }
+    .txts{
+        overflow: hidden;
+    }
+}
+
+.news-list{
+    li + li{
+        margin-top: 70px;
     }
 }

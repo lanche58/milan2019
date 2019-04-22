@@ -1,0 +1,42 @@
+.pager{
+    a{
+        width: 80px;
+        height: 80px;
+        background: $fc1;
+        line-height: 80px;
+        font-weight: bold;
+        font-size: 16px;
+        color: $white;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $hc2;
+                color: $fc1;
+                .btn{
+                    color: $fc1;
+                    &:before{
+                        background: $fc1;
+                    }
+                }
+            }
+        }
+        &.act{
+            background: $hc2;
+            color: $fc1;
+            .btn{
+                color: $fc1;
+                &:before{
+                    background: $fc1;
+                }
+            }
+        }
+    }
+    .btn{
+        position: relative;
+        top: -1px;
+        vertical-align: middle;
+        color: $white;
+        &:before{
+            background: $white;
+        }
+    }
+}

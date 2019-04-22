@@ -3,10 +3,11 @@
     margin-bottom: (120 / 1920) * 100%;
     &:before{
         @include ba;
-        right: 0;
+        width: 100%;
+        left: 50%;
+        margin-left: -600px + 240px;
         top: 0;
         bottom: -(120 / 553) * 100%;
-        width: (1320 / 1920) * 100%;
         background: $hc4;
     }
     .btn-scroll{

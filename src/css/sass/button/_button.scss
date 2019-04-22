@@ -3,6 +3,9 @@
     &:before, &:after{
         @include ba;
     }
+    &:before{
+        @include mt3;
+    }
     &:after{
         width: 0;
         height: 0;
@@ -354,4 +357,10 @@
 
 .btn{
     @include mt3;
+}
+
+.pro-ti{
+    font-size: 72px;
+    color: $fc1;
+    line-height: 1.4;
 }

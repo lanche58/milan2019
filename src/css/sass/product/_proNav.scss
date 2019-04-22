@@ -1,0 +1,15 @@
+.pro-nav{
+    line-height: 24px;
+    a{
+        padding: 0 (32px / 2);
+        color: $fc3;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                color: $fc1;
+            }
+        }
+        &.act{
+            color: $fc1;
+        }
+    }
+}

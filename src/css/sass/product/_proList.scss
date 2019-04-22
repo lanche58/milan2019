@@ -1,0 +1,19 @@
+.pro-list{
+    margin-left: -40px;
+    .item{
+        width: 50%;
+        float: left;
+        padding-left: 40px;
+        margin-bottom: 53px - 8px;
+        cursor: pointer;
+    }
+    .pai{
+        padding-bottom: (400 / 580) * 100%;
+    }
+    .nowti{
+        margin-top: 23px - 7px;
+        height: 24px;
+        line-height: 24px;
+        text-align: center;
+    }
+}

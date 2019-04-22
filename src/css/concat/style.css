@@ -3,6 +3,8 @@
   .btn-arrow:before, .btn-arrow:after {
     content: "";
     position: absolute; }
+  .btn-arrow:before {
+    transition: 300ms; }
   .btn-arrow:after {
     width: 0;
     height: 0; }
@@ -288,6 +290,11 @@
 .btn {
   transition: 300ms; }
 
+.pro-ti {
+  font-size: 72px;
+  color: #333;
+  line-height: 1.4; }
+
 .header {
   height: 100px;
   background: #f9f9f9;
@@ -467,10 +474,11 @@
   .pbanner-box:before {
     content: "";
     position: absolute;
-    right: 0;
+    width: 100%;
+    left: 50%;
+    margin-left: -360px;
     top: 0;
     bottom: -21.69982%;
-    width: 68.75%;
     background: #f9f9f9; }
   .pbanner-box .btn-scroll {
     position: absolute;
@@ -773,6 +781,166 @@
   overflow: hidden; }
   .news-item .picbox {
     float: left;
-    width: 35%; }
+    width: 35%;
+    margin-right: 6.25%; }
   .news-item .pai {
     padding-bottom: 57.14286%; }
+  .news-item .date {
+    margin-bottom: 4px;
+    color: #999; }
+  .news-item .nowti {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; }
+  .news-item .tx {
+    height: 48px;
+    margin-top: 30px; }
+  .news-item .more {
+    margin-top: 60px; }
+  .news-item .txts {
+    overflow: hidden; }
+
+.news-list li + li {
+  margin-top: 70px; }
+
+.pager a {
+  width: 80px;
+  height: 80px;
+  background: #333;
+  line-height: 80px;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fff; }
+  @media screen and (min-width: 1025px) {
+    .pager a:hover {
+      background: #e5e5e5;
+      color: #333; }
+      .pager a:hover .btn {
+        color: #333; }
+        .pager a:hover .btn:before {
+          background: #333; } }
+  .pager a.act {
+    background: #e5e5e5;
+    color: #333; }
+    .pager a.act .btn {
+      color: #333; }
+      .pager a.act .btn:before {
+        background: #333; }
+
+.pager .btn {
+  position: relative;
+  top: -1px;
+  vertical-align: middle;
+  color: #fff; }
+  .pager .btn:before {
+    background: #fff; }
+
+.nw1 {
+  padding: 6.25% 0 7.29167%; }
+  .nw1 .news-list {
+    margin-bottom: 90px; }
+
+.nw-ti {
+  position: relative;
+  padding-bottom: 18px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; }
+  .nw-ti:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 3px;
+    background: #333; }
+
+.nw2 {
+  padding: 5.72917% 0 100px; }
+  .nw2 .date {
+    margin-top: 45px; }
+    .nw2 .date span {
+      margin-left: 30px;
+      color: #999; }
+  .nw2 .freeTx {
+    margin-top: 55px; }
+  .nw2 .nw-back {
+    margin-top: 150px; }
+
+.nw-pw {
+  width: 850px;
+  margin-left: 240px;
+  max-width: 100%; }
+
+.nw-back {
+  text-align: left; }
+  .nw-back a {
+    width: 80px;
+    height: 80px;
+    background: #333;
+    line-height: 80px;
+    text-align: center;
+    color: #fff; }
+    @media screen and (min-width: 1025px) {
+      .nw-back a:hover {
+        background: #e5e5e5;
+        color: #333; }
+        .nw-back a:hover .btn {
+          color: #333; }
+          .nw-back a:hover .btn:before {
+            background: #333; } }
+  .nw-back .back {
+    width: 230px; }
+  .nw-back .btn {
+    position: relative;
+    top: -1px;
+    color: #fff;
+    vertical-align: middle; }
+    .nw-back .btn:before {
+      background: #fff; }
+
+.pro-nav {
+  line-height: 24px; }
+  .pro-nav a {
+    padding: 0 16px;
+    color: #999; }
+    @media screen and (min-width: 1025px) {
+      .pro-nav a:hover {
+        color: #333; } }
+    .pro-nav a.act {
+      color: #333; }
+
+.pro-list {
+  margin-left: -40px; }
+  .pro-list .item {
+    width: 50%;
+    float: left;
+    padding-left: 40px;
+    margin-bottom: 45px;
+    cursor: pointer; }
+  .pro-list .pai {
+    padding-bottom: 68.96552%; }
+  .pro-list .nowti {
+    margin-top: 16px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center; }
+
+.pro1 {
+  position: relative;
+  border-top: 1px solid #ccc;
+  padding: 65px 0 90px; }
+  .pro1:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: #f9f9f9;
+    padding-bottom: 25%; }
+  .pro1 .pro-nav {
+    margin-top: 20px; }
+  .pro1 .pw {
+    position: relative; }
+  .pro1 .pro-list {
+    margin-top: 80px; }

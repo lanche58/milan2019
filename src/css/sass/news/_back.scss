@@ -1,0 +1,35 @@
+.nw-back{
+    text-align: left;
+    a{
+        width: 80px;
+        height: 80px;
+        background: $fc1;
+        line-height: 80px;
+        text-align: center;
+        color: $white;
+        @media screen and (min-width:1025px) {
+            &:hover{
+                background: $hc2;
+                color: $fc1;
+                .btn{
+                    color: $fc1;
+                    &:before{
+                        background: $fc1;
+                    }
+                }
+            }
+        }
+    }
+    .back{
+        width: 230px;
+    }
+    .btn{
+        position: relative;
+        top: -1px;
+        color: $white;
+        vertical-align: middle;
+        &:before{
+            background: $white;
+        }
+    }
+}
