@@ -23,6 +23,79 @@
         width: 480px;
         padding-top: (140 / 1920) * 100%;
     }
+    @media screen and (max-width:1366px) {
+        margin-top: 90px;
+        .ia-tx{
+            margin-left: -500px;
+            width: 440px;
+        }
+    }
+    @media screen and (max-width:1201px) {
+        .ia-tx{
+            .tx{
+                margin-top: 30px;
+            }
+            .more{
+                margin-top: 60px;
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        padding: 0 5%;
+        &:before{
+            display: none;
+        }
+        .ia-tx{
+            position: static;
+            margin: 0;
+            width: 45%;
+            float: left;
+            padding-top: 10px;
+        }
+        .ix-video{
+            margin-right: 0;
+            width: 50%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        margin-top: 70px;
+        .ia-tx{
+            .tx{
+                max-height: 24px * 2;
+                margin-top: 25px;
+            }
+            .more{
+                margin-top: 40px;
+            }
+        }
+    }
+    @media screen and (max-width:781px) {
+        .ia-tx, .ix-video{
+            width: 100%;
+            float: none;
+        }
+        .ia-tx{
+            padding-top: 20px;
+            .tx{
+                margin-top: 30px;
+                max-height: none;
+            }
+            .more{
+                margin-top: 60px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        margin-top: (70 / 600) * 100vw;
+        .ia-tx{
+            .tx{
+                margin-top: 5vw;
+            }
+            .more{
+                margin-top: 10vw;
+            }
+        }
+    }
 }
 
 .ix-video{
@@ -50,6 +123,11 @@
     .more{
         margin-top: 105px;
     }
+    @media screen and (max-width:1366px) {
+        .more{
+            margin-top: 80px;
+        }
+    }
 }
 
 .ix2{
@@ -69,6 +147,47 @@
         width: 50%;
         float: left;
         padding: 40px 0 0 (110 / 1200) * 100%;
+    }
+    @media screen and (max-width:1366px) {
+        margin-top: 90px;
+    }
+    @media screen and (max-width:1024px) {
+        .ia-tx{
+            padding: 10px 0 0 5%;
+            .tx{
+                margin-top: 30px;
+            }
+            .more{
+                margin-top: 60px;
+            }
+        }
+    }
+    @media screen and (max-width:861px) {
+        margin-top: 70px;
+        &:after{
+            display: none;
+        }
+    }
+    @media screen and (max-width:781px) {
+        .ia-tx{
+            width: 100%;
+            float: none;
+            padding: 20px 0 0 0;
+            .tx{
+                max-height: none;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        margin-top: (70 / 600) * 100vw;
+        .ia-tx{
+            .tx{
+                margin-top: 5vw;
+            }
+            .more{
+                margin-top: 10vw;
+            }
+        }
     }
 }
 
@@ -101,6 +220,19 @@
             }
         }
     }
+    @media screen and (max-width:861px) {
+        overflow: hidden;
+        .slick-list{
+            overflow: hidden;
+        }
+        .item{
+            border: none;
+        }
+    }
+    @media screen and (max-width:781px) {
+        width: 100%;
+        float: none;
+    }
 }
 
 .ip-arrow{
@@ -130,16 +262,71 @@
     .slick-prev{
         margin-right: 96px;
     }
+    @media screen and (max-width:861px) {
+        .slick-arrow{
+            right: 0;
+            width: 86px;
+            height: 52px;
+            line-height: 52px;
+        }
+        .slick-prev{
+            margin-right: 86px;
+        }
+    }
 }
 
 .pw2{
     width: 1360px;
     margin: 0 auto;
+    @media screen and (max-width:1601px) {
+        width: 1200px;
+    }
+    @media screen and (max-width:1366px) {
+        width: 1000px;
+    }
+    @media screen and (max-width:1024px) {
+        width: 90%;
+    }
 }
 
 .ix3{
     padding: 110px 0;
     .ix-ti{
         margin-bottom: 80px;
+    }
+    @media screen and (max-width:1366px) {
+        padding: 90px 0;
+        .ix-ti{
+            margin-bottom: 60px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        padding-bottom: 90px - 45px;
+    }
+    @media screen and (max-width:861px) {
+        padding-top: 70px;
+        padding-bottom: 70px - 45px;
+        .ix-ti{
+            margin-bottom: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (70 / 600) * 100% 0 (25 / 600) * 100% 0;
+        .ix-ti{
+            margin-bottom: (50 / 600) * 100%;
+        }
+    }
+}
+
+.ix4{
+    @media screen and (max-width:1024px) {
+        padding: 0 5% 90px;
+        border-bottom: 1px solid $hc1;
+    }
+    @media screen and (max-width:861px) {
+        padding-bottom: 70px;
+    }
+    @media screen and (max-width:601px) {
+        padding-bottom: (70 / 600) * 100vw;
     }
 }

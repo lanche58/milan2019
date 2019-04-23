@@ -1,0 +1,33 @@
+.ab-intro{
+    .fixbg{
+        height: 578px;
+    }
+    @media screen and (max-width:1366px) {
+        .fixbg{
+            height: 478px;
+        }
+    }
+}
+
+.ab1{
+    padding: (145 / 1920) * 100% 0 (140 / 1920) * 100%;
+    .ab-intro{
+        margin-top: (100 / 1920) * 100%;
+    }
+    @media screen and (max-width:1366px) {
+        padding: 90px 0 100px;
+        .ab-intro{
+            margin-top: 70px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        padding: 70px 0 80px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (70 / 600) * 100vw 0 (80 / 600) * 100vw;
+    }
+}
+
+.ab2{
+    padding-top: (120 / 1920) * 100%;
+}

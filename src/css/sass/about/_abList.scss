@@ -1,0 +1,123 @@
+.ab-list{
+    .picbox{
+        float: left;
+        width: (568 / 1200) * 100%;
+        margin-right: (80 / 1200) * 100%;
+        overflow: visible;
+        &:before{
+            @include ba;
+            top: -(35 / 315) * 100%;
+            bottom: (75 / 315) * 100%;
+            left: -(60 / 568) * 100%;
+            right: (130 / 568) * 100%;
+            background: $hc4;
+        }
+        @media screen and (min-width:1025px) {
+            transform: translateX(-60px);
+            opacity: 0;
+        }
+    }
+    .pai{
+        padding-bottom: (315 / 568) * 100%;
+    }
+    .txts{
+        overflow: hidden;
+    }
+    .freeTx{
+        margin-top: 40px;
+    }
+    li{
+        + li{
+            margin-top: (115 / 1200) * 100%;
+        }
+        &:nth-child(2n-1){
+            .picbox{
+                float: right;
+                margin: 0 0 0 (80 / 1200) * 100%;
+                &:before{
+                    right: -(60 / 568) * 100%;
+                    left: (130 / 568) * 100%;
+                }
+                @media screen and (min-width:1025px) {
+                    transform: translateX(60px);
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .freeTx{
+            margin-top: 30px;
+        }
+        .picbox{
+            width: 50%;
+            margin-right: 5%;
+        }
+        li{
+            + li{
+                margin-top: 80px;
+            }
+            &:nth-child(2n-1){
+                .picbox{
+                    margin: 0 0 0 5%;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        li{
+            display: flex;
+        }
+        .picbox{
+            margin: 0 !important;
+            width: 268px;
+            &:before{
+                display: none;
+            }
+        }
+        .txts{
+            flex: 1;
+            padding-left: 5%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        li + li{
+            margin-top: 70px;
+        }
+    }
+    @media screen and (max-width:721px) {
+        .picbox{
+            width: 188px;
+        }
+    }
+    @media screen and (max-width:641px) {
+        li{
+            display: block;
+        }
+        .picbox{
+            width: 100%;
+            float: none !important; 
+        }
+        .txts{
+            padding: 20px 0 0 0;
+        }
+    }
+    @media screen and (max-width:601px) {
+        li + li{
+            margin-top: (70 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .freeTx{
+            margin-top: 25px;
+        }
+    }
+}
+
+@media screen and (min-width:1025px) {
+    .active{
+        .picbox{
+            transform: none !important;
+            opacity: 1;
+        }
+    }
+}

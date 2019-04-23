@@ -63,6 +63,24 @@
             padding: (80px - 24px) / 2 0;
         }
     }
+    @media screen and (max-width:1024px) {
+        height: 60px;
+        box-shadow: 0 0 5px $black-5;
+        .nav{
+            display: none;
+        }
+        .logo{
+            top: (60px - 56px) / 2;
+            left: 5%;
+            transform-origin: left center;
+            transform: scale(.8);
+        }
+    }
+    @media screen and (max-width:481px) {
+        .logo{
+            transform: scale(.65);
+        }
+    }
 }
 
 .btn-menu.s-btn-menu{
@@ -176,8 +194,113 @@
             }
         }
     }
+    @media screen and (max-width:1601px) {
+        .menuCont{
+            padding-top: 14%;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .menuCont{
+            padding-top: 13%;
+        }
+        .navMobile{
+            a{
+                line-height: 28px;
+            }
+            dd{
+                > a{
+                    height: 28px;
+                    font-size: 24px;
+                    @media screen and (min-width:1025px) {
+                        &:hover{
+                            .e{
+                                margin-top: -28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width:1024px) {
+        padding-right: 60px;
+        .m-cop{
+            display: none;
+        }
+        .menuCont{
+            margin-right: 0;
+            padding-top: 20%;
+        }
+        .share{
+            margin-right: 30px;
+            right: 60px;
+        }
+        .logo{
+            left: 5%;
+            transform-origin: left top;
+            transform: scale(.8);
+        }
+        .navMobile{
+            padding-bottom: 60px;
+            dd{
+                padding: 0;
+                + dd{
+                    margin-top: 30px;
+                }
+                > a{
+                    &.act{
+                        .e{
+                            margin-top: -28px;
+                        }
+                    }
+                }
+            }
+            .c{
+                &:before{
+                    display: none;
+                }
+            }
+            .e{
+                @include mt3;
+            }
+            .mtv{
+                padding-top: 15px;
+                text-align: center;
+                > a{
+                    padding: 8px 0;
+                    line-height: 1.4;
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+    @media screen and (max-width:641px) {
+        .menuCont{
+            padding-top: 110px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .logo{
+            transform: scale(.65);
+        }
+        .navMobile{
+            .c{
+                font-size: 20px;
+            }
+            .mtv>a{
+                padding: 6px 0;
+                font-size: 14px;
+            }
+        }
+        .share{
+            margin-right: 15px;
+        }
+    }
 }
 
 .mtop{
     height: 100px;
+    @media screen and (max-width:1024px) {
+        height: 60px;
+    }
 }

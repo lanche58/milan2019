@@ -17,6 +17,24 @@
         top: 100%;
         margin-top: -75px;
     }
+    @media screen and (max-width:1024px) {
+        .btn-scroll{
+            display: none;
+        }
+        .ix-ti{
+            right: 5%;
+        }
+        &:before{
+            margin-left: 0;
+            left: 5%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        margin-bottom: 0;
+        &:before{
+            display: none;
+        }
+    }
 }
 
 .btn-scroll{
@@ -34,6 +52,30 @@
         position: absolute;
         right: (95 / 1920) * 100%;
         top: (115 / 553) * 100%;
-        min-width: 555px;
+        min-width: 550px;
+        .ch{
+            width: 390px;
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:1366px) {
+        .ix-ti{
+            top: 16%;
+            min-width: 440px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .pic2{
+            width: 100%;
+        }
+        .ix-ti{
+            padding: 30px 5%;
+            position: static;
+            background: $hc4;
+            min-width: 0;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ix-ti{ padding-top: 5vw; padding-bottom: 5vw; }
     }
 }

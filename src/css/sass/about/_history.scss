@@ -1,0 +1,68 @@
+.history-item{
+    .year{
+        margin-bottom: 29px - 14px;
+        font-size: 54px;
+        color: $fc1;
+        line-height: 1;
+    }
+}
+
+.history-list{
+    li{
+        width: 50%;
+        float: right;
+    }
+    .history-item{
+        position: relative;
+        margin-bottom: (150 / 680) * 100%;
+        &:before{
+            @include ba;
+            top: 20px;
+            width: 88px;
+            height: 1px;
+            background: $fc1;
+        }
+    }
+    .le{
+        .history-item{
+            padding-left: 100px;
+            &:before{
+                left: 1px;
+            }
+        }
+    }
+    .ri{
+        padding-top: (200 / 1360) * 100%;
+        .history-item{
+            padding-right: 100px;
+            &:before{
+                right: 0;
+            }
+        }
+        .year{
+            text-align: right;
+        }
+    }
+}
+
+.history-wrap{
+    position: relative;
+    padding-top: (90 / 1360) * 100%;
+    &:before, &:after{
+        @include ba;
+    }
+    &:before{
+        left: 50%;
+        top: 29px;
+        bottom: 0;
+        border-left: 1px solid $fc1;
+    }
+    &:after{
+        @include c(29px);
+        top: 0;
+        left: 50%;
+        margin-left: -14px;
+        border: 1px solid $fc1;
+        box-sizing: border-box;
+    }
+}

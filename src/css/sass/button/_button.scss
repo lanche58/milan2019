@@ -170,6 +170,9 @@
         border-radius: 50%;
         animation: twinkle 2s infinite both;
     }
+    @media screen and (max-width:481px) {
+        transform: scale(.7);
+    }
 }
 
 @keyframes twinkle{
@@ -266,6 +269,10 @@
             transform: rotate(-225deg);
         }
     }
+    @media screen and (max-width:1024px) {
+        right: 0;
+        top: 0;
+    }
 }
 
 @keyframes spotMove {
@@ -322,11 +329,73 @@
     color: $fc1;
     .en{
         font-size: 50px;
-        margin-bottom: 12px;
+        margin-bottom: 8px;
     }
     .ch{
         font-size: 16px;
         line-height: 1.6;
+    }
+    .ti{
+        font-size: 24px;
+    }
+    .line{
+        display: block;
+        margin-top: 15px;
+        width: 30px;
+        height: 3px;
+        background: $fc1;
+    }
+    .text{
+        margin-top: 25px;
+        line-height: 1.6;
+        font-size: 18px;
+    }
+    @media screen and (max-width:1366px) {
+        .en{
+            font-size: 40px;
+        }
+        .ch{
+            font-size: 14px;
+        }
+        .ti{
+            font-size: 20px;
+        }
+        .text{
+            font-size: 16px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .en{
+            font-size: 32px;
+            margin-bottom: 5px;
+        }
+        .ch{
+            font-size: 13px;
+        }
+        .ti{
+            font-size: 18px;
+        }
+        .text{
+            font-size: 15px;
+        }
+        .line{
+            width: 5vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .en{
+            font-size: 26px;
+        }
+        .ch{
+            font-size: 12px;
+        }
+        .ti{
+            font-size: 16px;
+        }
+        .text{
+            margin-top: 20px;
+            font-size: 14px;
+        }
     }
 }
 

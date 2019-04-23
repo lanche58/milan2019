@@ -95,44 +95,22 @@ $(function () {
         }
     });
 
-
-    // 友情链接
-    // var isopen = 0;
-    // $('.friendship-link').bind(_click, function(){
-    //     if(isopen==0){
-    //         isopen = 1;
-    //         $(this).addClass('act');
-    //         $('.friendship-link .k').stop().slideDown(300);
-    //     }else{
-    //         isopen = 0;
-    //         $(this).removeClass('act');
-    //         $('.friendship-link .k').stop().slideUp(300);
-    //     }
-    // });
-    // $('.friendship-link').mouseleave(function(){
-    //     isopen = 0;
-    //     $('.friendship-link').removeClass('act');
-    //     $('.friendship-link .k').stop().slideUp(300);
-    // });
-
-
-
-
 	// 手机导航
-	// $('.navMobile dd > a').bind(_click, function (e) {
-	// 	if($(this).next('.mtv').size() >= 1){
-	// 		if(!$(this).hasClass('act')){
-	// 			e.preventDefault();
-	// 			$('.navMobile dd > a').removeClass('act');
-	// 			$('.mtv').stop().slideUp(300);
-	// 			$(this).addClass('act');
-	// 			$(this).next('.mtv').stop().slideDown(300);
-	// 		}else{
-	// 			$(this).removeClass('act');
-	// 			$(this).next('.mtv').stop().slideUp(300);
-	// 		}
-	// 	}
-	// });
+	$('.navMobile dd > a').bind(_click, function (e) {
+        if (!isMobile) { return; }
+		if($(this).next('.mtv').size() >= 1){
+			if(!$(this).hasClass('act')){
+				e.preventDefault();
+				$('.navMobile dd > a').removeClass('act');
+				$('.mtv').stop().slideUp(300);
+				$(this).addClass('act');
+				$(this).next('.mtv').stop().slideDown(300);
+			}else{
+				$(this).removeClass('act');
+				$(this).next('.mtv').stop().slideUp(300);
+			}
+		}
+	});
 	$menuBtn.bind(_click, function () {
         if (navItem == 0) {
             $('html').addClass('open');
@@ -146,25 +124,11 @@ $(function () {
             navItem = 0;
         }
     });
- //    $('.menuBlack').bind(_click, function () {
- //        var w = $menuBox.width();
- //        $('html').removeClass('open');
- //        $menuBtn.removeClass('active');
- //        $('.menuBlack').stop().fadeOut(600);
- //        $menuBox.stop(false,false).animate({right:-w+"px"},function(){
- //            $(this).hide();
- //        });
- //        navItem = 0;
- //    });
+
 	
 	
 	// pbanner animation
 	$(window).scroll(function() {
-        // var windowTop = $(window).scrollTop();
-        // if (windowTop < w_height && !isMobile) {
-        //     $('.pbanner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
-        //     $('.pro-banner .pic2 img').css('transform', "translate(0px," + (windowTop) / 1.5 + "px)");
-        // }
         changeHeader();
     });
  

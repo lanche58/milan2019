@@ -37,4 +37,20 @@
             }
         }
     }
+    @media screen and (max-width:1024px) {
+        padding: 20px 0;
+        .f-ma{
+            display: none;
+        }
+        .f-cop{
+            padding: 0;
+            float: none;
+            a{
+                margin-top: 0;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (20 / 600) * 100vw 0;
+    }
 }

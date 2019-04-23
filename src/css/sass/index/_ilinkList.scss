@@ -3,6 +3,26 @@
         width: 50%;
         float: left;
     }
+    @media screen and (max-width:1024px) {
+        margin-left: -30px;
+        .ilink-item{
+            margin-left: 30px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        li{
+            width: 100%;
+            float: none;
+            + li{
+                margin-top: 50px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        li + li{
+            margin-top: (50 / 600) * 100vw;
+        }
+    }
 }
 
 .ilink-item{
@@ -22,7 +42,7 @@
         position: absolute;
         top: (80 / 430) * 100%;
         left: (200 / 960) * 100%;
-        right: 40px;
+        right: 10%;
     }
     .ix-ti{
         color: $white;
@@ -43,6 +63,122 @@
     &.act{
         .pai:after{
             background: $black-6;
+        }
+    }
+    @media screen and (max-width:1601px) {
+        .txts{
+            left: 10%;
+            top: 14%;
+        }
+    }
+    @media screen and (max-width:1440px) {
+        .tx{
+            margin-top: 30px;
+        }
+        .more{
+            margin-top: 40px;
+        }
+    }
+    @media screen and (max-width:1280px) {
+        .txts{
+            top: 12%;
+        }
+    }
+    @media screen and (max-width:1201px) {
+        .ix-ti{
+            .en{
+                font-size: 32px;
+                margin-bottom: 5px;
+            }
+            .ch{
+                font-size: 13px;
+            }
+        }
+        .tx{
+            line-height: 20px !important;
+            font-size: 12px;
+            height: 20px * 2;
+            margin-top: 20px;
+        }
+        .more{
+            margin-top: 30px;
+        }
+        .txts{
+            top: 14%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        color: $fc2;
+        .pai:after{
+            display: none;
+        }
+        .txts{
+            position: static;
+            background: $white;
+            height: 275px;
+            padding: 30px 40px 0;
+            overflow: hidden;
+        }
+        .ix-ti{
+            color: $fc1;
+            .ch{
+                font-size: 14px;
+            }
+            .en{
+                font-size: 40px;
+                margin-bottom: 8px;
+            }
+        }
+        .btn-learn-more{
+            color: $fc1;
+            border-color: $fc1;
+        }
+        .tx{
+            font-size: 14px;
+            line-height: 24px !important;
+            height: 24px * 2;
+        }
+    }
+    @media screen and (max-width:861px) {
+        .txts{
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        .txts{
+            height: auto;
+            padding: 30px 5% 40px;
+        }
+        .tx{
+            height: auto;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .txts{
+            padding-top: 5vw;
+        }
+        .ix-ti{
+            .en{
+                font-size: 32px;
+                margin-bottom: 5px;
+            }
+            .ch{
+                font-size: 13px;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .txts{
+            padding-bottom: (50 / 600) * 100vw;
+        }
+        .ix-ti{
+            .en{
+                font-size: 26px;
+            }
+            .ch{
+                font-size: 12px;
+            }
         }
     }
 }
