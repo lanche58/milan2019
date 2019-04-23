@@ -1589,12 +1589,50 @@
 
 .ab2 {
   padding-top: 6.25%; }
+  @media screen and (max-width: 1366px) {
+    .ab2 {
+      padding-top: 90px; } }
+  @media screen and (max-width: 861px) {
+    .ab2 {
+      padding-top: 70px; } }
+  @media screen and (max-width: 641px) {
+    .ab2 {
+      padding-bottom: 80px; } }
+  @media screen and (max-width: 601px) {
+    .ab2 {
+      padding-top: 11.66667vw;
+      padding-bottom: 13.33333vw; } }
 
 .history-item .year {
   margin-bottom: 15px;
   font-size: 54px;
   color: #333;
   line-height: 1; }
+
+@media screen and (max-width: 861px) {
+  .history-item .year {
+    font-size: 44px; } }
+
+@media screen and (max-width: 781px) {
+  .history-item .year {
+    font-size: 36px; } }
+
+@media screen and (max-width: 641px) {
+  .history-item {
+    border: 1px solid #ccc;
+    padding: 20px 5%;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); }
+    .history-item + .history-item {
+      margin-top: 30px; } }
+
+@media screen and (max-width: 601px) {
+  .history-item + .history-item {
+    margin-top: 5vw; } }
+
+@media screen and (max-width: 481px) {
+  .history-item .year {
+    font-size: 32px;
+    margin-bottom: 10px; } }
 
 .history-list li {
   width: 50%;
@@ -1614,7 +1652,7 @@
 .history-list .le .history-item {
   padding-left: 100px; }
   .history-list .le .history-item:before {
-    left: 1px; }
+    left: 0; }
 
 .history-list .ri {
   padding-top: 14.70588%; }
@@ -1624,6 +1662,30 @@
       right: 0; }
   .history-list .ri .year {
     text-align: right; }
+
+@media screen and (max-width: 1024px) {
+  .history-list .history-item {
+    margin-bottom: 100px; } }
+
+@media screen and (max-width: 861px) {
+  .history-list .le .history-item {
+    padding-left: 60px; }
+  .history-list .ri .history-item {
+    padding-right: 60px; }
+  .history-list .history-item:before {
+    width: 48px; } }
+
+@media screen and (max-width: 781px) {
+  .history-list .le .history-item {
+    padding-left: 40px; }
+  .history-list .ri .history-item {
+    padding-right: 40px; }
+  .history-list .history-item:before {
+    width: 28px; } }
+
+@media screen and (max-width: 641px) {
+  .history-list {
+    display: none; } }
 
 .history-wrap {
   position: relative;
@@ -1645,3 +1707,11 @@
     margin-left: -14px;
     border: 1px solid #333;
     box-sizing: border-box; }
+  @media screen and (max-width: 1024px) {
+    .history-wrap {
+      padding-top: 60px; } }
+  @media screen and (max-width: 641px) {
+    .history-wrap {
+      padding-top: 0; }
+      .history-wrap:before, .history-wrap:after {
+        display: none; } }
