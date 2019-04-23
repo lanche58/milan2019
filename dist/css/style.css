@@ -1410,6 +1410,9 @@ a.pswp__share--download:hover{background:#ddd}
 @media screen and (max-width:1366px){
 .ab-intro .fixbg{height:478px}
 }
+@media screen and (max-width:601px){
+.ab-intro .fixbg{height:79.66667vw}
+}
 .ab1{padding:7.55208% 0 7.29167%}
 .ab1 .ab-intro{margin-top:5.20833%}
 @media screen and (max-width:1366px){
@@ -1421,6 +1424,7 @@ a.pswp__share--download:hover{background:#ddd}
 }
 @media screen and (max-width:601px){
 .ab1{padding:11.66667vw 0 13.33333vw}
+.ab1 .ab-intro{margin-top:11.66667vw}
 }
 .ab2{padding-top:6.25%}
 .history-item .year{margin-bottom:15px;font-size:54px;color:#333;line-height:1}

@@ -1565,6 +1565,10 @@
   .ab-intro .fixbg {
     height: 478px; } }
 
+@media screen and (max-width: 601px) {
+  .ab-intro .fixbg {
+    height: 79.66667vw; } }
+
 .ab1 {
   padding: 7.55208% 0 7.29167%; }
   .ab1 .ab-intro {
@@ -1579,7 +1583,9 @@
       padding: 70px 0 80px; } }
   @media screen and (max-width: 601px) {
     .ab1 {
-      padding: 11.66667vw 0 13.33333vw; } }
+      padding: 11.66667vw 0 13.33333vw; }
+      .ab1 .ab-intro {
+        margin-top: 11.66667vw; } }
 
 .ab2 {
   padding-top: 6.25%; }
