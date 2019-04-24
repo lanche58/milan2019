@@ -1,0 +1,95 @@
+.brand-pa{
+    padding-left: (360 / 1920) * 100%;
+    @media screen and (max-width:1366px) {
+        padding-left: (183 / 1366) * 100%;
+    }
+    @media screen and (max-width:1024px) {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+}
+
+.brand-tx{
+    .freeTx{
+        width: 850px;
+        max-width: 90%;
+        margin-top: 35px;
+    }
+    @media screen and (max-width:1024px) {
+        .freeTx{
+            max-width: 100%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .freeTx{
+            margin-top: 5vw;
+        }
+    }
+}
+
+.brand-pic{
+    width: (1450 / 1920) * 100%;
+    @media screen and (max-width:1024px) {
+        width: 95%;
+    }
+}
+
+.bra1{
+    padding-top: 90px;
+    .brand-bg{
+        margin-top: 60px;
+    } 
+    @media screen and (max-width:1024px) {
+        padding: 70px 0 80px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (70 / 600) * 100vw 0 (80 / 600) * 100vw;
+        .brand-bg{
+            margin-top: 10vw;
+        } 
+    }
+}
+
+.brand-page{
+    .pbanner-box{
+        margin-bottom: 0;
+        &:before{
+            display: none;
+        }
+    }
+}
+
+.brand-bg{
+    position: relative;
+    padding-top: 60px;
+    &:before{
+        @include ba;
+        width: 50%;
+        z-index: -1;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        background: $hc4;
+    }
+    .brand-tx{
+        padding-top: 80px;
+        .pic{
+            margin-top: 60px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .brand-tx{
+            padding-top: 70px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-top: 10vw;
+        .brand-tx{
+            padding-top: (70 / 600) * 100vw;
+            .pic{
+                margin-top: 10vw;
+            }
+        }
+    }
+}
+

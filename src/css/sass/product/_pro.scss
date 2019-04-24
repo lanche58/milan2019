@@ -8,7 +8,7 @@
         right: 0;
         top: 0;
         background: $hc4;
-        padding-bottom: (480 / 1920) * 100%;
+        padding-bottom: 480px;
     }
     .pro-nav{
         margin-top: 20px;
@@ -18,5 +18,108 @@
     }
     .pro-list{
         margin-top: 80px;
+    }
+    @media screen and (max-width:1366px) {
+        &:before{
+            padding-bottom: 440px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        border: none;
+        .pro-nav{
+            margin-top: 20px - 13px;
+        }
+        .pro-list{
+            margin-top: 60px - 13px;
+        }
+        &:before{
+            padding-bottom: (400 / 1024) * 100%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        &:before{
+            padding-bottom: 42%;
+        }
+    }
+    @media screen and (max-width:781px) {
+        &:before{
+            padding-bottom: 48%;
+        }
+    }
+    @media screen and (max-width:641px) {
+        &:before{
+            padding-bottom: 52%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding-bottom: (80 / 600) * 100vw;
+        &:before{
+            padding-bottom: 55%;
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding-top: 45px;
+        .pro-list{
+            margin-top: 35px;
+        }
+    }
+    @media screen and (max-width:421px) {
+        &:before{
+            padding-bottom: 62%;
+        }
+    }
+    @media screen and (max-width:361px) {
+        &:before{
+            padding-bottom: 67%;
+        }
+    }
+    @media screen and (max-width:321px) {
+        &:before{
+            padding-bottom: 74%;
+        }
+    }
+}
+
+.pswp__button--arrow--left, .pswp__button--arrow--right{
+    @include c(48px);
+    margin-top: -24px;
+    background: $white;
+    line-height: 48px;
+    text-align: center;
+    font-family: "iconfont" !important;
+    color: $fc1;
+    font-size: 18px;
+    font-weight: bold;
+    &:before{
+        width: auto;
+        height: auto;
+        position: static;
+        background: none;
+    }
+    @media screen and (max-width:601px) {
+        width: 32px;
+        height: 32px;
+        line-height: 32px;
+        font-size: 12px;
+    }
+}
+
+.pswp__button--arrow--left{
+    left: 5%;
+    &:before{
+        content: "\e660";
+    }
+    @media screen and (max-width:601px) {
+        left: 5px;
+    }
+}
+
+.pswp__button--arrow--right{
+    right: 5%;
+    &:before{
+        content: "\e65f";
+    }
+    @media screen and (max-width:601px) {
+        right: 5px;
     }
 }

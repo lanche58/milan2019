@@ -3,6 +3,34 @@
     .news-list{
         margin-bottom: 90px;
     }
+    @media screen and (max-width:1366px) {
+        padding: 90px 0 100px;
+        .news-list{
+            margin-bottom: 80px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .news-list{
+            margin-bottom: 80px - 45px;
+        }
+    }
+    @media screen and (max-width:861px) {
+        padding: 70px 0 80px;
+        .news-list{
+            margin-bottom: 70px - 45px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (70 / 600) * 100vw 0 (80 / 600) * 100vw;
+        .news-list{
+            margin-bottom: (25 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .news-list{
+            margin-bottom: 0;
+        }
+    }
 }
 
 .nw-ti{
@@ -18,6 +46,15 @@
         width: 40px;
         height: 3px;
         background: $fc1;
+    }
+    @media screen and (max-width:601px) {
+        &:before{
+            width: (40 / 600) * 100vw;
+        }
+    }
+    @media screen and (max-width:481px) {
+        padding-bottom: 10px;
+        font-size: 22px;
     }
 }
 
@@ -36,10 +73,34 @@
     .nw-back{
         margin-top: 150px;
     }
+    @media screen and (max-width:1366px) {
+        padding-top: 90px;
+    }
+    @media screen and (max-width:861px) {
+        padding: 70px 0 80px;
+    }
+    @media screen and (max-width:601px) {
+        padding: (70 / 600) * 100vw 0 (80 / 600) * 100vw;
+        .freeTx{
+            margin-top: (55 / 600) * 100vw;
+        }
+        .date{
+            margin-top: 7.5vw;
+        }
+        .nw-back{
+            margin-top: (120 / 600) * 100vw;
+        }
+    }
 }
 
 .nw-pw{
     width: 850px;
     margin-left: 240px;
     max-width: 100%;
+    @media screen and (max-width:1366px) {
+        margin-left: 140px;
+    }
+    @media screen and (max-width:1024px) {
+        margin: 0 auto;
+    }
 }

@@ -16,4 +16,22 @@
         line-height: 24px;
         text-align: center;
     }
+    @media screen and (max-width:601px) {
+        margin-left: -20px; 
+        .item{
+            padding-left: 20px;
+            margin-bottom: 25px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        margin-left: -10px; 
+        .item{
+            padding-left: 10px;
+            margin-bottom: 15px;
+        }
+        .nowti{
+            margin-top: 8px;
+            font-size: 13px;
+        }
+    }
 }

@@ -1,6 +1,7 @@
 .pro-nav{
     line-height: 24px;
     a{
+        display: block;
         padding: 0 (32px / 2);
         color: $fc3;
         @media screen and (min-width:1025px) {
@@ -10,6 +11,30 @@
         }
         &.act{
             color: $fc1;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        position: relative;
+        height: 50px;
+        @include sx;
+        ul{
+            position: absolute;
+            top: 0;
+            left: 0;
+            min-width: 100%;
+            white-space: nowrap;
+        }
+        a{
+            position: relative;
+            padding: (50px - 24px) / 2 (32px / 2);
+            &:before{
+                @include hl($fc1,3px);
+            }
+            &.act{
+                &:before{
+                    @include hlw;
+                }
+            }
         }
     }
 }

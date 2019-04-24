@@ -52,3 +52,204 @@
         padding-bottom: (80 / 600) * 100vw;
     }
 }
+
+.honor-page{
+    position: relative;
+    &:before{
+        @include ba;
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+        right: 0;
+        bottom: 0;
+        top: 15%;
+        background: $hc4;
+    }
+    .pbanner-box{
+        margin: 0;
+        &:before{
+            display: none;
+        }
+    }
+}
+
+.honor-tx{
+    width: 100% - 56.66%;
+    .freeTx{
+        width: 440px;
+        max-width: 100%;
+        margin-top: 45px - 10px;
+    }
+    @media screen and (max-width:1366px) {
+        .freeTx{
+            margin-top: 30px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        .freeTx{
+            margin-top: 20px;
+            font-size: 13px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .freeTx{
+            margin-top: 5vw;
+            font-size: 14px;
+        }
+    }
+}
+
+.honor-item{
+    .picbox{
+        width: 56.66%;
+        float: left;
+    }
+    .honor-tx{
+        float: left;
+    }
+    @media screen and (max-width:781px) {
+        .ix-ti{
+            .en{
+                font-size: 32px;
+            }
+            .ti{
+                font-size: 16px;
+            }
+        }
+    }
+    @media screen and (max-width:601px) {
+        .ix-ti{
+            .ti{
+                font-size: 18px;
+            }
+        }
+    }
+    @media screen and (max-width:481px) {
+        .ix-ti{
+            .en{
+                font-size: 26px;
+            }
+            .ti{
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.honor-item1{
+    .pai{
+        padding-bottom: (330 / 680) * 100%;
+    }
+    .honor-tx{
+        padding-left: (75 / 1200) * 100%;
+    }
+    @media screen and (max-width:861px) {
+        .picbox{
+            width: 38%;
+        }
+        .honor-tx{
+            width: 100% - 38%;
+        }
+    }
+    @media screen and (max-width:601px) {
+        .picbox{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+        .honor-tx{
+            width: 100%;
+            padding: 0;
+        }
+    }
+}
+
+.honor-item2{
+    .pics{
+        position: relative;
+        width: 52%;
+        float: right;
+        letter-spacing: -6px;
+    }
+    .honor-tx{
+        width: 100% - 52%;
+        padding: (270 / 1200) * 100% (75 / 1200) * 100% 0 0;
+    }
+    .p1, .p2{
+        display: inline-block;
+        vertical-align: bottom;
+        letter-spacing: 0;
+    }
+    .p1{
+        width: 40.64%;
+        .pai{
+            padding-bottom: (234 / 254) * 100%;
+        }
+    }
+    .p2{
+        width: 100% - 40.64%;
+        padding-left: 15px;
+        .pai{
+            padding-bottom: (515 / 358) * 100%;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .honor-tx{
+            padding-top: 20%;
+        }
+    }
+    @media screen and (max-width:861px) {
+        display: flex;
+        align-items: flex-end;
+        .pics{
+            order: 2;
+        }
+        .honor-tx{
+            padding-top: 0;
+            order: 1;
+            padding-bottom: 2%;
+        }
+    }
+    @media screen and (max-width:781px) {
+        .p2{
+            padding-left: 5px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        display: block;
+        .honor-tx{
+            width: 100%;
+            padding-bottom: 0;
+        }
+        .pics{
+            width: 100%;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.honor-item0{
+    @media screen and (max-width:861px) {
+        .honor-tx{
+            width: 100%;
+        } 
+    }
+}
+
+.ab3{
+    padding: 90px 0 100px;
+    .honor-item + .honor-item{
+        margin-top: 70px;
+    }
+    @media screen and (max-width:1024px) {
+        padding: 70px 0 80px;
+        .honor-item + .honor-item{
+            margin-top: 60px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        padding: (70 / 600) * 100vw 0 (80 / 600) * 100vw;
+        .honor-item + .honor-item{
+            margin-top: 10vw;
+        }
+    }
+}

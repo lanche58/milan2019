@@ -234,8 +234,8 @@ a {
 /* winxin */
 .popUpblack { position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 1020; background: url(../images/black5.png); display: none; }
 .popUpblack.show .popUp { transform: none; opacity: 1; visibility: visible; transition: 600ms; }
-.popUp { position: absolute; left: 50%; top: 50%; margin: -126px 0 0 -115px; width: 220px; height: 242px; border: 5px solid #000; background: #fff; opacity: 0; visibility: hidden; transform: translateY(20%); }
-.popUp .t { padding: 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; background: #000; overflow: hidden; }
+.popUp { position: absolute; left: 50%; top: 50%; margin: -126px 0 0 -115px; width: 220px; height: 242px; border: 5px solid #999; background: #fff; opacity: 0; visibility: hidden; transform: translateY(20%); }
+.popUp .t { padding: 0 10px; height: 26px; line-height: 26px; color: #fff; font-weight: bold; background: #999; overflow: hidden; }
 .popUp .t .close { float: right; cursor: pointer; color: #fff; font-weight: normal; }
 .popUp .img { padding: 20px; }
 .popUp .img img { width: 100%; display: block; }
@@ -329,6 +329,11 @@ a {
 	from, to { -webkit-transform: none; transform: none; }
   	50% { -webkit-transform: translate(0, -7px); transform: translate(0, -7px); } 
 	} /* 电话数字 animation: phoneJump .5s 1; */
+
+@keyframes phoneJump2 { 
+	from, to { -webkit-transform: none; transform: none; }
+		50% { -webkit-transform: translate(0, 7px); transform: translate(0, 7px); } 
+	}
 @-webkit-keyframes _cyLogoShow { 
 	0% { background: linear-gradient(120deg, transparent -15%, rgba(255, 255, 255, 0.5), transparent 15%); }
   	10% { background: linear-gradient(120deg, transparent -5%, rgba(255, 255, 255, 0.5), transparent 25%); }

@@ -32,4 +32,35 @@
             background: $white;
         }
     }
+    @media screen and (max-width:1366px) {
+        a{
+            width: 64px;
+            height: 64px;
+            line-height: 64px;
+        }
+        .back{
+            width: 184px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        a{
+            width: 54px;
+            height: 54px;
+            line-height: 54px;
+        }
+        .back{
+            width: 154px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        a{
+            width: 44px;
+            height: 44px;
+            line-height: 44px;
+            font-size: 12px;
+        }
+        .back{
+            width: 124px;
+        }
+    }
 }

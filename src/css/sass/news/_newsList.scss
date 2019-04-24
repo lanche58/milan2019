@@ -28,10 +28,81 @@
     .txts{
         overflow: hidden;
     }
+    @media screen and (max-width:1366px) {
+        .picbox{
+            margin-right: 40px;
+        }
+        .tx{
+            margin-top: 20px;
+        }
+        .more{
+            margin-top: 35px;
+        }
+        .date{
+            font-size: 12px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        .picbox{
+            display: none;
+        }
+        .date{
+            font-size: 14px;
+        }
+        .tx{
+            height: 24px * 3;
+        }
+    }
+    @media screen and (max-width:481px) {
+        .picbox{
+            display: block;
+            width: 100%;
+            float: none;
+            margin: 0 0 10px 0;
+        }
+    }
 }
 
 .news-list{
     li + li{
         margin-top: 70px;
+    }
+    @media screen and (max-width:1366px) {
+        li + li{
+            margin-top: 50px;
+        }
+    }
+    @media screen and (max-width:1024px) {
+        overflow: hidden;
+        margin-left: -90px;
+        li{
+            width: 50%;
+            float: left;
+            margin-bottom: 45px;
+            + li{
+                margin-top: 0;
+            }
+        }
+        .news-item{
+            margin-left: 90px;
+        }
+    }
+    @media screen and (max-width:781px) {
+        margin-left: -50px;
+        .news-item{
+            margin-left: 50px;
+        }
+    }
+    @media screen and (max-width:601px) {
+        margin-left: -35px;
+        .news-item{
+            margin-left: 35px;
+        }
+    }
+    @media screen and (max-width:481px) {
+        li{
+            width: 100%;
+            float: none;
+        }
     }
 }

@@ -4,6 +4,22 @@
         font-size: 54px;
         color: $fc1;
         line-height: 1;
+        span{
+            display: inline-block;
+            vertical-align: bottom;
+        }
+    }
+    @media screen and (min-width:1025px) {
+        &:hover{
+            .year{
+                .up{
+                    animation: phoneJump .3s linear alternate 3 both;
+                }
+                .down{
+                    animation: phoneJump2 .3s linear alternate 3 both;
+                }
+            }
+        }
     }
     @media screen and (max-width:861px) {
         .year{

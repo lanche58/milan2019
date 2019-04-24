@@ -1,0 +1,67 @@
+@@include('./top.html')
+</head>
+<body>
+@@include('./header.html',{
+    "service": "act"
+})
+<div class="container">
+    @@include('./pbanner.html',{
+        "img": "cta_banner.jpg",
+        "en": "Contact Miland",
+        "ch": "联系我们"
+    })
+    <div class="cta1">
+        <div class="pw scroll-animation">
+            <p class="nw-ti splwo fadeIn">深圳市米兰家居有限公司</p>
+            <ul class="cta-list">
+                <li class="transX trans"><a href="#">地址：中国广东省深圳市龙岗区龙东吓井工业区龙南路291号</a></li>
+                <li class="transX trans"><a href="tel:075528294724" class="na">电话：0755-28294724</a></li>
+                <li class="transX trans">传真：0755-28294825</li>
+                <li class="transX trans"><a href="#">邮箱：miland@miland-home.com</a></li>
+                <li class="transX trans"><a href="tel:4006632330" class="na">全国统一服务热线：400-6632-330</a></li>
+            </ul>
+            <div class="map-pos"></div>
+        </div>
+        <div id="map"></div>
+    </div>
+    <!-- cta1 -->
+</div>
+<!-- container -->
+@@include('./footer.html')
+<script src="js/plugin.js"></script>
+<script src="js/page.js"></script>
+<script src="http://api.map.baidu.com/api?v=2.0&ak=7d3a4c6e5e8a70dd200a2eeacf8c1b50"></script>
+<script>
+    $(function(){
+        function ShowMap(zuobiao, showmapInfo, zoom) {
+            var arrzuobiao = zuobiao.split(',');
+                var map = new BMap.Map("map");
+            var point = new BMap.Point(arrzuobiao[0], arrzuobiao[1]);
+            var marker = new BMap.Marker(point, {
+                icon: new BMap.Icon("images/mapi.png", new BMap.Size(94, 94))
+            })
+            map.addOverlay(marker);
+            marker.setAnimation(BMAP_ANIMATION_BOUNCE);
+            map.centerAndZoom(point, zoom);
+            map.disableScrollWheelZoom();
+            var opts = {
+                width: 400
+            }
+            var infoWindow = new BMap.InfoWindow(showmapInfo, opts);
+            marker.addEventListener("click", function () {
+                if (w_width>=641) {
+                    map.openInfoWindow(infoWindow,point);
+                }  
+            });
+            map.setMapStyle({style:'grayscale'});
+        };
+        var k='<p style="font-size: 18px; color: #666;">地址：四川省绵阳市游仙区游仙东路89号</p><p style="font-size: 18px; color: #666;">邮编：621000</p>'; 
+        ShowMap('104.018887,30.723201', k, '17');
+
+        $('.cta-list li').each(function(i) {
+            $(this).css({'transition-delay': 200*i + 'ms'})
+        });
+    })
+</script>
+</body>
+</html>
